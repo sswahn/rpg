@@ -19,10 +19,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-  
 
-      - name: Clean Install Dependencies
-        run: npm ci
+      - name: Install RPGJS Dependencies
+        run: npm install
 
       - name: Verify Environment Build
         run: npx rpgjs build
