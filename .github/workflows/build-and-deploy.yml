@@ -25,3 +25,9 @@ jobs:
 
       - name: Verify Environment Build
         run: npx rpgjs build
+
+      - name: Upload Build
+        uses: actions/upload-artifact@v4
+        with:
+          name: rpgjs-build
+          path: dist
