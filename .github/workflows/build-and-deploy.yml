@@ -19,10 +19,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          # Removed the cache option to prevent lockfile errors
 
       - name: Install RPGJS Dependencies
-        run: npm install  # Changed from npm ci to npm install
+        run: npm install
 
       - name: Verify Environment Build
-        run: npm run build
+        run: npx --node-options="--experimental-specifier-resolution=node" rpgjs build
