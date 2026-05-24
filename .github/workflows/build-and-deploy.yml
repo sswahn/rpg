@@ -2,9 +2,9 @@ name: RPGJS Dev Environment CI
 
 on:
   push:
-    branches: [ main, dev ]
+    branches: [main, dev]
   pull_request:
-    branches: [ main, dev ]
+    branches: [main, dev]
 
 jobs:
   init-env:
@@ -18,10 +18,11 @@ jobs:
       - name: Setup Node.js Environment
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 18
+          cache: npm
 
-      - name: Install RPGJS Dependencies
-        run: npm install
+      - name: Clean Install Dependencies
+        run: npm ci
 
       - name: Verify Environment Build
-        run: npx --node-options="--experimental-specifier-resolution=node" rpgjs build
+        run: npx rpgjs build
