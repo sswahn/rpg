@@ -26,5 +26,3 @@ jobs:
 
       - name: Verify Environment Build
         run: npm run build
-        env:
-          NODE_OPTIONS: "--experimental-default-type=commonjs"
