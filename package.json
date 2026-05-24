@@ -1,11 +1,11 @@
 {
-  "name": "rpgjs",
+  "name": "my-rpgjs-game",
   "version": "1.0.0",
-  "description": "A 2D Browser RPG built with RPGJS.",
+  "description": "A 2D Browser RPG built with RPGJS",
   "type": "module",
   "scripts": {
     "dev": "rpgjs dev",
-    "build": "rpgjs build",
+    "build": "node --experimental-specifier-resolution=node ./node_modules/@rpgjs/compiler/src/cli.js build",
     "start": "rpgjs start"
   },
   "dependencies": {
