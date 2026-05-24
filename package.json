@@ -1,0 +1,25 @@
+{
+  "name": "rpgjs",
+  "version": "1.0.0",
+  "description": "A 2D Browser RPG built with RPGJS",
+  "type": "module",
+  "scripts": {
+    "dev": "rpgjs dev",
+    "build": "rpgjs build",
+    "start": "rpgjs start"
+  },
+  "dependencies": {
+    "@rpgjs/client": "^4.0.0",
+    "@rpgjs/server": "^4.0.0",
+    "@rpgjs/standalone": "^4.0.0",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@rpgjs/compiler": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
