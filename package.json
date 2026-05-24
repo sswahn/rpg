@@ -1,5 +1,5 @@
 {
-  "name": "my-rpgjs-game",
+  "name": "rpgjs",
   "version": "1.0.0",
   "description": "A 2D Browser RPG built with RPGJS",
   "scripts": {
